@@ -1,0 +1,28 @@
+@use "../global/" as *;
+
+.info-card {
+background-color: $primary-500;
+width: 300px;
+border-radius: 1em;
+    .cards-grid {
+        overflow: hidden;
+        .card1-img {
+            width: 100%;
+            height: auto;
+            border-radius: 1em 1em 0 0;
+        }
+        
+        h5 {
+            @include heading-bold-700-5;
+            color: $neutral-100;
+        }
+
+        .card-text{
+            height: 150px;
+            padding: 2em;
+            @include body-bold-600-2;
+            color: $neutral-100;
+
+        }
+    }
+}

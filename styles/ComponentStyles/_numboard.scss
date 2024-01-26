@@ -1,0 +1,40 @@
+@use "../global/" as *;
+
+.numboard-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+
+.numboard-img-div {
+    .numboard-img {
+        width: 390px;
+        height: auto;
+    }
+}
+
+    .numboard-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        gap: 2em;
+
+        .numboard-grid-item {
+            // border: 1px solid #ccc;
+            display: grid;
+            place-content: center;
+            place-items: center;
+
+            h5 {
+                @include heading-bold-700-2;
+            }
+            h6 {
+                @include body-bold-600-1;
+                color: $primary-500;
+            }
+        }
+    }
+
+
+}

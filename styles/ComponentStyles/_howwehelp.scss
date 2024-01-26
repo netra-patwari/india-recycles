@@ -1,0 +1,15 @@
+@use "../global/" as *;
+
+h1 {
+    @include heading-bold-700-2;
+    text-align: center;
+}
+
+.hdwh {
+    padding-block: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+@use "../global/" as *;
+
+.flexyimgcard-div-reverse {
+    flex-direction: row-reverse;
+}
+
+.flexyimgcard-div {
+    padding: 2em;
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    h6 {
+        @include heading-bold-700-6;
+        max-width: 650px;
+    }
+    .flexyimgcard-img {
+        width: 250px;
+        height: auto;
+    }
+}

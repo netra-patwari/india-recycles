@@ -1,0 +1,11 @@
+@use "../global/" as *;
+
+
+.rules-li {
+    @include heading-bold-700-5;
+    text-align: center;
+}
+
+// .rules-ul {
+//     align-items: center;
+// }

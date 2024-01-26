@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+// font family
+$titles-font: 'Inter', sans-serif;
+
+
+@mixin heading-bold-700-1 {
+    font-family: Inter;
+    font-size: clamp(1.7rem, 6vw + .1rem,3.5625rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 5.34375rem */
+    letter-spacing: -0.07125rem;
+}
+
+@mixin heading-bold-700-2 {
+    font-family: Inter;
+    font-size: clamp(1.8125rem, 2vw + .2rem ,2.98625rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 4.47938rem */
+    letter-spacing: -0.05975rem;
+}
+
+
+@mixin heading-bold-700-3 {
+    font-family: Inter;
+    font-size: clamp(1.625rem,2vw + .2rem,2.48813rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 3.73219rem */
+    letter-spacing: -0.04975rem;
+}
+
+
+@mixin heading-bold-700-4 {
+    font-family: Inter;
+    font-size: clamp(1.4375rem,2vw + .2rem ,2.07375rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 3.11063rem */
+    letter-spacing: -0.0415rem;
+}
+
+
+
+@mixin heading-bold-700-5 {
+    font-family: Inter;
+    font-size:clamp(1.25rem , 1vw + .1rem , 1.72813rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 2.59219rem */
+    letter-spacing: -0.03456rem;
+}
+
+@mixin heading-bold-700-6 {
+    font-family: Inter;
+    font-size: clamp( 1.125rem , 2vw + .1rem , 1.44rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 2.16rem */
+    letter-spacing: -0.02881rem;
+    
+}
+
+
+@mixin body-bold-600-1 {
+
+    font-family: Inter;
+    font-size: clamp(1rem, 2vw + .1rem , 1.2rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.44rem */
+    letter-spacing: -0.036rem;
+    
+}
+
+
+@mixin body-bold-600-2 {
+
+    font-family: Inter;
+    font-size: clamp(0.875rem , 1vw + .1rem ,1rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.2rem */
+    letter-spacing: -0.03rem;
+    
+}

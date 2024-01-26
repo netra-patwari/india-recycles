@@ -1,0 +1,18 @@
+@use "../global/" as *;
+
+.footer-icons-band {
+    display: flex;
+    gap: 1em;
+    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-500;
+
+    .footer-icon {
+        color: $neutral-100;
+
+        &:hover {
+            color: $neutral-100;
+        }
+    }
+}

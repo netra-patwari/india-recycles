@@ -1,0 +1,26 @@
+@use "../global/" as *;
+
+.CTA {
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    background-color: $primary-500;
+    border: 3px $primary-500 solid;
+    border-radius: 7px;
+
+    a{  @include body-bold-600-1;
+        color: $neutral-100 !important;
+        text-decoration: none;
+        &:hover {
+        color: $neutral-100 !important;
+    }
+}
+    &:hover , link{
+        background-color: $primary-600;
+        border-color: $primary-700;
+    }
+
+}
+

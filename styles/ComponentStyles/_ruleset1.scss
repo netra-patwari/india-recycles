@@ -1,0 +1,39 @@
+@use "../global/" as *;
+
+.ruleset-1-sec {
+    text-align: center;
+    h1 {
+        @include heading-bold-700-3;
+    }
+    .ruleset1-grid {
+        display: grid;
+        place-content : center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1em;
+        .center-img{
+            display: flex;
+            justify-content: center;
+
+
+            @media (width < 900px) {
+                align-items: center;   
+            }
+            .ruleset-fluid-img {
+                width: 465.887px;
+                height: auto;
+    
+                @media (width < 900px) {
+                    width: 250px;      
+                }
+            
+            }
+        }
+       
+    }
+    .center-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,25 @@
+@use "../global/" as *;
+
+.social-proof-div {
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+
+    @media (width < 1280px) {
+        padding:  .5em;  
+        gap: .5em;
+            
+    }
+
+    > * {
+        padding: 1em;
+
+        @media (width < 1280px) {
+            padding:  .1em;
+            scale: .7;
+        }
+    }
+}
