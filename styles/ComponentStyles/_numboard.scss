@@ -7,6 +7,10 @@
     align-items: center;
     gap: 5em;
 
+    @media (width < 900px) {
+        gap: .5em;   
+    }        
+
 .numboard-img-div {
     .numboard-img {
         width: 390px;

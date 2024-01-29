@@ -1,0 +1,17 @@
+@use "../global/" as *;
+
+.centered-text {
+    text-align: center;
+}
+
+.h2 {
+    @include heading-bold-700-2;
+}
+
+.h2-green {
+    color: $primary-500;
+}
+
+.h2-black {
+    color: $neutral-900;
+}

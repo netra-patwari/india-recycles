@@ -7,7 +7,7 @@ import CardImg3 from '@/img/home/home-img-9home-img-pack.webp';
 const HowWeHelp = () => {
   return (
 <>
-<h1>How We Help</h1>
+<h1 className='pt-2'>How We Help</h1>
 <div className='hdwh'>
     
     <Card1

@@ -1,6 +1,7 @@
 @use "../global/" as *;
 
 .ruleset-1-sec {
+    padding-bottom: 2em;
     text-align: center;
     h1 {
         @include heading-bold-700-3;
@@ -10,6 +11,11 @@
         place-content : center;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1em;
+
+        // @media (width < 900px) {
+        //     gap: .5em;   
+        // }        
+
         .center-img{
             display: flex;
             justify-content: center;

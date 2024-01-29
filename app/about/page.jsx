@@ -1,9 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FlexyImgCard from "@/components/FlexyImgCard";
-
-
 import Timeline from "@/components/Timeline";
+import AboutSection from "@/components/AboutSection";
+import Team from "@/components/Team";
+
 import img1 from "@/img/about/about_page_1.webp";
 import img2 from "@/img/about/about_page_2.webp";
 import img3 from "@/img/about/about_page_3.webp";
@@ -39,8 +40,11 @@ const page = () => {
         side="right"
       />
       <Timeline />
+      <AboutSection />
+      <Team />
 
       <Footer />
+
     </>
   );
 };

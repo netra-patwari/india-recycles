@@ -1,0 +1,42 @@
+@use "../global/" as *;
+
+.card3-container {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+
+    .card3 {
+        border-radius: 22px;
+        display: grid;
+        // place-content: center;
+        place-items: center;
+        text-align: center;
+        background-color: $primary-500;
+        border:  3px solid $neutral-900;
+        aspect-ratio: 1/1;
+        width: 300px;
+
+        gap: 1em;
+
+        img {
+            margin: 1em;
+            border:  3px solid $neutral-100;
+            width: 200px;
+            height: 200px;
+            border-radius: 1000px;
+        }
+        .text-box {
+            padding: 1em;
+            .body1 {
+                @include body-bold-600-1;
+                color: $neutral-100;
+            }
+            .body2 {
+                @include body-bold-600-2;
+                color: $neutral-100;
+            }
+        }
+
+    }
+}
