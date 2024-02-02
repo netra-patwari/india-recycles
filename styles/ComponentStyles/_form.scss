@@ -1,0 +1,152 @@
+@use "../global/" as *;
+
+@mixin inputfiled {
+    appearance: none;
+    outline: none;
+    display: block;
+    @include body-bold-600-2;
+    background-color: transparent;
+    border: 4px solid black;
+    border-radius: 12px;
+    padding: .5em;
+    width: 100%;
+    min-width: 300px;
+    @media (max-width:450px) {
+        min-width: 260px;
+        max-width: 260px;
+    }      
+}
+
+.form-section {
+    margin: 0em;
+    .form-img {
+        position: relative;
+        display: inline;
+        width: 204px;
+        height: auto;
+
+        @media (max-width:1280px) {
+            display: none;
+        } 
+    }
+
+    .img-1 {
+        left: 80%;
+        bottom: -330px;
+        transform: rotate(12deg);
+        @media (max-width:1280px) {
+            display: none;
+        } 
+    }
+
+    .img-2 {
+        left: 1%;
+        bottom: -330px;
+        transform: rotate(-14deg);
+        @media (max-width:1280px) {
+            display: none;
+        } 
+    }
+
+    .img-3 {
+        left: 80%;
+        bottom: 330px;
+        transform: rotate(-14deg);
+        @media (max-width:1280px) {
+            display: none;
+        } 
+    }
+
+    .img-4 {
+        left: 1%;
+        bottom: 330px;
+        transform: rotate(12deg);
+        @media (max-width:1280px) {
+            display: none;
+        } 
+    }
+
+    .contact-form {
+        display: grid;
+        place-content: center;
+        margin-top: 4em;
+    
+        h4 {
+            text-align: center;
+            @include heading-bold-700-4;
+        }
+    
+        .form-card {
+            width: max-content;
+            min-width: 310px;
+            display: grid;
+            place-content: center;
+            place-items: center;
+            border: 3px solid $primary-500;
+            border-radius: 40px;
+            padding: 2em;
+            margin: 2em;
+
+            @media (max-width:450px) {
+                border: none;
+                padding: 0em;
+                margin: 0;
+            }
+    
+            .contact-form-div {
+                padding: .2em;
+                margin-bottom: .4em;
+    
+                &:nth-child(7) {
+                    justify-self: center;
+                }
+    
+                label {
+                    @include body-bold-600-1;
+                }
+    
+    
+                input {
+                    @include inputfiled();
+                    color: $primary-500;          
+    
+                    &:focus {
+                        border-color: $primary-500 ;
+                    }
+    
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus,
+                    &:-internal-autofill-selected {
+                        color: $primary-500 ;
+                        -webkit-text-fill-color: $primary-500;
+                        background-color: $primary-500;
+                    }
+    
+                    &:-moz-placeholder {
+                        color: $primary-500;
+                    }
+    
+    
+                }
+    
+                .red {
+                    @include body-bold-600-2;
+                    color: #D40000;
+                }
+    
+                select {
+                    @include inputfiled();
+                    color: $primary-500;
+    
+                    option {
+                        color: $primary-500;
+                        background-color: $neutral-100;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+

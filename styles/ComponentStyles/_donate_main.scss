@@ -1,0 +1,36 @@
+@use "../global/" as *;
+
+.donate-main {
+    .main-h1 {
+        @include heading-bold-700-1;
+    }
+    .centered-div {
+        display: flex;
+        justify-content: center;
+        padding: 3em;
+        #qr-box {
+            width: 80vw;
+            max-width: 200px;
+            aspect-ratio: 1 / 1;
+            background-color: #757575;
+    
+    
+        }
+
+    }
+    .bgImgs {
+        display: inline;
+
+        .donate-main-img {
+            position: relative;
+            width: 206px;
+            height: 300px;
+            object-fit: cover;
+            display: inline;
+
+        }
+
+    }
+
+
+}
