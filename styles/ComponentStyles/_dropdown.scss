@@ -1,0 +1,49 @@
+@use "../global/" as *;
+
+.app {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+
+    .dropdown-container {
+        width: 30vw;
+    }
+
+    .custom-dropdown {
+        @include heading-bold-700-6;
+        padding: 10px 20px;
+        width: 100%;
+        background: $neutral-100;
+        border: 5px solid $neutral-900;
+        border-radius: 8px;
+        min-width: 280px;
+        appearance: none;
+        outline: none;
+
+        &:focus , &:active {
+            border-color: $primary-600;
+        }
+
+        &__menu {
+            background-color: $neutral-100;
+            border: 5px solid $neutral-900;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 5px;
+
+            .react-select__option {
+                padding: 10px 20px;
+                color: $neutral-900;
+
+                &--is-selected {
+                    background-color: $primary-600;
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: $primary-600;
+                }
+            }
+        }
+    }
+}

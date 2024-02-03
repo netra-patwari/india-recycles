@@ -1,0 +1,57 @@
+@use "../global/" as *;
+
+.droploc {
+    .droploc-header {
+        padding: 2em; 
+        display: grid;
+        place-content: center;
+        place-items: center;
+        text-align: center;
+
+        h2 {
+            @include heading-bold-700-2;
+        }
+
+        h4 {
+            @include heading-bold-700-4;
+            color: $primary-500;
+            }
+
+
+
+        }
+
+        .droploc-container {
+            margin: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em;
+            justify-content: center;
+            .droploc-box {
+                text-align: center;
+                display: grid;
+                place-content: center;
+                place-items: center;
+                
+                ul , ol {
+                    list-style-type: none;
+
+                }
+
+                display: grid;
+
+                h4 {
+                    @include heading-bold-700-4;
+                    color: $primary-500;
+
+                }
+
+                img {
+                    width: 80%;
+                    height: auto;
+                    border-radius: 12px;
+                    border: 4px $primary-500 solid;
+                }
+            }
+        }
+    }
