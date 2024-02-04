@@ -12,7 +12,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <h1>Our Goal is to -------------</h1>
+      <h1>Our goal is to weave a sustainable future through recycled dreams.</h1>
       <FlexyImgCard
         img={img5}
         caption="India Recycles is a campaign started with an aim to promote the sustainable model of various concepts surrounding the Reuse & Recycling of products through the collection of various pre-owned items as donations. The target is to bring this awareness to every community, class and society of the city."

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const DropLocCard = () => {
+const DropLocCard = ({area='Area',address='7th Floor, Popular House Above ICICI Bank, Ashram Road Ahmedabad - 380009' , refPer='refperson' , contact='contact'}) => {
   return (
     <>
     <div className="green-card-container">
-        <h6>Area</h6>
-        <h6>7th Floor, Popular House Above ICICI Bank, Ashram Road Ahmedabad - 380009</h6>
-        <h6>Reference Person: Mrugesh Mehta</h6>
-        <h6>Contact: +91 9974244901</h6>
+        <h6 className='bold'>{area}</h6>
+        <h6>{address}</h6>
+        <h6><span className='bold'>Reference Person :</span>{refPer}</h6>
+        <h6> <span className='bold'>Contact :</span>{contact}</h6>
     </div>
     </>
   )

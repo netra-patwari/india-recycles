@@ -6,8 +6,15 @@
     background-color: $primary-500;
     padding: 1.5em 2.5em; 
     border-radius: 29px;
+    .bold {
+        @include heading-bold-700-6;
+    }
     h6 {
         @include heading-400-6;
         color: $neutral-100;
+
+        .bold {
+            @include heading-bold-700-6;
+        }
     }
 }

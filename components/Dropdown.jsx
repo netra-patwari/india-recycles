@@ -1,38 +1,4 @@
 "use client"
-// import React, { useState } from "react";
-// import Select from "react-select";
-
-// export default function App() {
-//   const [selectedOptions, setSelectedOptions] = useState();
-  
-//   const optionList = [
-//     { value: "red", label: "Red" },
-//     { value: "green", label: "Green" },
-//     { value: "yellow", label: "Yellow" },
-//     { value: "blue", label: "Blue" },
-//     { value: "white", label: "White" }
-//   ];
-
-//   function handleSelect(data) {
-//     setSelectedOptions(data);
-//   }
-
-//   return (
-//     <div className="app">
-//       <div className="dropdown-container">
-//         <Select
-//           options={optionList}
-//           placeholder="Select color"
-//           value={selectedOptions}
-//           onChange={handleSelect}
-//           isSearchable={true}
-//           className="custom-dropdown" // Added a custom class for styling
-//         />
-//       </div>
-//     </div>
-//   );
-// }
-
 
 import React, { useState } from "react";
 import Select from "react-select";
@@ -51,30 +17,48 @@ export default function App() {
   const customStyles = {
     control: (base, state) => ({
       ...base,
-      borderColor: state.isFocused ? '#grey' : '#red',
+      fontFamily: 'Inter',
+      fontSize: 'clamp(0.875rem, 1vw + .1rem, 1rem)',
+      fontStyle: 'normal',
+      fontWeight: 700,
+      lineHeight: '120%',
+      letterSpacing: '-0.03rem',
+      backgroundColor: '#FBF5F0',
+      border: '2px solid #008036',
+      borderColor: state.isActive ? '#008036' : '#ccc',
+      borderRadius: '8px',
+      outline : 'none',
       '&:hover': {
-        borderColor: '#grey',
-      }
+        borderColor: '#008036',
+      },
     }),
     menu: base => ({
       ...base,
-      backgroundColor: '#neutral-100',
-      border: '5px solid #neutral-900',
+      fontFamily: 'Inter',
+      fontSize: 'clamp(0.875rem, 1vw + .1rem, 1rem)',
+      fontStyle: 'normal',
+      fontWeight: 700,
+      lineHeight: '120%',
+      letterSpacing: '-0.03rem',
+      backgroundColor: '#FBF5F0',
+      border: '3px solid #000',
       borderRadius: '8px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       marginTop: '5px',
     }),
     option: (base, state) => ({
       ...base,
       padding: '10px 20px',
-      color: '#neutral-900',
-      backgroundColor: state.isSelected ? '#primary-600' : 'inherit',
+      color: state.isSelected ? '#FBF5F0' : '#000',
+      backgroundColor: state.isSelected ? '#008036' : '',
       '&:hover': {
-        backgroundColor: '#primary-100',
+        backgroundColor: state.isSelected ? '#05B750' : '',
+        backgroundColor :'#05B750',
+        color:'#FBF5F0',
       },
     }),
   };
-
+  
+  
   function handleSelect(data) {
     setSelectedOptions(data);
   }
@@ -83,12 +67,13 @@ export default function App() {
     <div className="app">
       <div className="dropdown-container">
         <Select
+          classNamePrefix='filter'
           options={optionList}
-          placeholder="Select color"
+          placeholder="Drop Location near your Area"
           value={selectedOptions}
           onChange={handleSelect}
           isSearchable={true}
-          styles={customStyles}
+          // styles={customStyles}
         />
       </div>
     </div>

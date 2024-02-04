@@ -7,43 +7,70 @@
 
     .dropdown-container {
         width: 30vw;
+        min-width: 300px;
+
+        $primaryColor: #008036;
+$neutralColor: #ccc;
+$selectedBackgroundColor: #05B750;
+
+.filter {
+  &__control {
+    font-family: 'Inter';
+    font-size: clamp(0.875rem, 1vw + 0.1rem, 1rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.03rem;
+    background-color: #FBF5F0;
+    border: 2px solid $primaryColor;
+    border-color: $primaryColor;
+    border-radius: 8px;
+    outline: none !important;
+    box-shadow: none;
+
+    &:hover {
+      border-color: $primaryColor;
+    }
+    &__is-focused {
+        outline: none !important;
+        box-shadow: none;
+    }
+  }
+
+  &__menu {
+    font-family: 'Inter';
+    font-size: clamp(0.875rem, 1vw + 0.1rem, 1rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.03rem;
+    background-color: #FBF5F0;
+    border: 3px solid #000;
+    border-radius: 8px;
+    margin-top: 5px;
+  }
+
+  &__option {
+    padding: 10px 20px;
+    color: #000;
+    background-color: white;
+
+    &--is-selected {
+      background-color: $primaryColor;
+      color: #FBF5F0;
+    }
+    &--is-focused {
+        outline: none !important;
     }
 
-    .custom-dropdown {
-        @include heading-bold-700-6;
-        padding: 10px 20px;
-        width: 100%;
-        background: $neutral-100;
-        border: 5px solid $neutral-900;
-        border-radius: 8px;
-        min-width: 280px;
-        appearance: none;
-        outline: none;
-
-        &:focus , &:active {
-            border-color: $primary-600;
-        }
-
-        &__menu {
-            background-color: $neutral-100;
-            border: 5px solid $neutral-900;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 5px;
-
-            .react-select__option {
-                padding: 10px 20px;
-                color: $neutral-900;
-
-                &--is-selected {
-                    background-color: $primary-600;
-                    color: white;
-                }
-
-                &:hover {
-                    background-color: $primary-600;
-                }
-            }
-        }
+    &:hover {
+      background-color: $selectedBackgroundColor;
+      color: #FBF5F0;
     }
+  }
 }
+
+    }
+
+
+       }
