@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# India Recycles - Website Re-design and Frontend Project
 
-## Getting Started
+India Recycles is a frontend clone project where I redesigned and replicated the official website of India Recycles. This project is built using Next.js and SCSS for styling. The UI design is entirely crafted by me, and it's still a work in progress, with ongoing improvements and enhancements.
 
-First, run the development server:
+## Purpose
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The purpose of this project is to demonstrate my frontend development skills, including design implementation and responsive web development. By creating a clone of the India Recycles website and redesigning it from scratch, I aimed to showcase my ability to create visually appealing and functional user interfaces.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Responsive design: Ensures optimal viewing experience across various devices and screen sizes.
+- Next.js: Utilizes the Next.js framework for server-side rendering and efficient routing.
+- SCSS: Enhances the styling process with the use of SCSS preprocessor for maintaining organized and reusable styles.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
 
-## Learn More
+![logo](/img/logo/logo-type=defaultlogo.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Work in Progress
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Integration of additional features and functionalities.
+- Refinement of design elements for enhanced user experience.
+- Optimization for performance and accessibility.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Figma Design
 
-## Deploy on Vercel
+The Figma design file for the India Recycles project can be viewed [here](https://www.figma.com/file/6HVdzcjDJTQLf8ukSDR5PT/Redesign-India-Recycles?type=design&node-id=3%3A2&mode=design&t=o6sq8PIZvBc3KZHP-1).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Official Website
+
+The official website of India Recycles can be accessed [here](https://www.indiarecycles.org/).
+
+
+
+## Disclaimer
+
+India Recycles is a personal project created for the purpose of showcasing frontend development skills. It is not affiliated with the official India Recycles organization. All images and content used in this project are for demonstration purposes only.
