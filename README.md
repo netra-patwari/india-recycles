@@ -14,7 +14,7 @@ The purpose of this project is to demonstrate my frontend development skills, in
 
 ## Screenshots
 
-![logo](/img/logo/logo-type=defaultlogo.png)
+![logo](/img/india_recycles.png)
 
 ## Work in Progress
 
