@@ -97,9 +97,6 @@ const Navbar = () => {
 
             <li>
               {" "}
-              {/* <Link className="" href="/droplocation">
-                DROP LOCATIONS
-              </Link> */}
               <CTA title={'DROP LOCATIONS'}></CTA>
             </li>
           </ul>

@@ -12,55 +12,55 @@ const NumBoard = () => {
         </div>
         <div className="numboard-grid">
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
 
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
 
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
 
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
 
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
 
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
 
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
 
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
 
 
-          <div class="numboard-grid-item">
+          <div className="numboard-grid-item">
             <h5>55</h5>
             <h6>Slum Sale</h6>
           </div>
