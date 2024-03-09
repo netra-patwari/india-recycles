@@ -1,4 +1,4 @@
-import Main from "@/components/main"
+import Main from "@/components/Main"
 import Navbar from '@/components/Navbar'
 import NumBoard from "@/components/NumBoard"
 import Ruleset1 from "@/components/Ruleset1"
