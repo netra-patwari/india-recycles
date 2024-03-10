@@ -50,7 +50,7 @@ const Timeline = () => {
         <div className="box box-left">
           <div className="container left-container">
             <div className="text-box left-text-box">
-              <h2>"Revibe" - our brand of upcycled products made from unsold items</h2>
+              <h2> &quot; Revibe&ldquo; - our brand of upcycled products made from unsold items</h2>
             </div>
           </div>
           <Image className="timeline-img timeline-img-5" src={img6} alt="timeline-img" />
@@ -59,7 +59,7 @@ const Timeline = () => {
         <div className="box box-right">
           <div className="container right-container">
             <div className="text-box left-text-box">
-              <h2>"The Godadi Project" - blankets made out of unwearable & faded clothes</h2>
+              <h2>&quot;The Godadi Project&ldquo; - blankets made out of unwearable & faded clothes</h2>
             </div>
           </div>
           <Image className="timeline-img timeline-img-6" src={img14} alt="timeline-img" />
